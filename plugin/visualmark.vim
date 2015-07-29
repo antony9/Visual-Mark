@@ -26,18 +26,18 @@ endif
 " ---------------------------------------------------------------------
 "  Public Interface:
 if !hasmapto('<Plug>Vm_toggle_sign')
-  map <unique> <c-F2> <Plug>Vm_toggle_sign
+"  map <unique> <c-F2> <Plug>Vm_toggle_sign
   map <silent> <unique> mm <Plug>Vm_toggle_sign 
 endif
 nnoremap <silent> <script> <Plug>Vm_toggle_sign	:call Vm_toggle_sign()<cr>
 
 if !hasmapto('<Plug>Vm_goto_next_sign')
-  map <unique> <F2> <Plug>Vm_goto_next_sign
+  map <unique> m <Plug>Vm_goto_next_sign
 endif
 nnoremap <silent> <script> <Plug>Vm_goto_next_sign	:call Vm_goto_next_sign()<cr>
 
 if !hasmapto('<Plug>Vm_goto_prev_sign')
-  map <unique> <s-F2> <Plug>Vm_goto_prev_sign
+  map <unique> M <Plug>Vm_goto_prev_sign
 endif
 nnoremap <silent> <script> <Plug>Vm_goto_prev_sign	:call Vm_goto_prev_sign()<cr>
 
